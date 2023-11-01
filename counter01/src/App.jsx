@@ -5,6 +5,7 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [count_, getcount] = useState(0)
 
   return (
     <>
@@ -19,7 +20,10 @@ function App() {
       <h1>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+          add {count}
+        </button>
+        <button onClick={() => getcount((count_) => count_ - 1)}>
+          remove {count_}
         </button>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
